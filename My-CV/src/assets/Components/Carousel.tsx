@@ -9,11 +9,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 interface Projects {
 	title: string;
-	year: number;
-	rating: string;
-	thumbnail: string;
-	genre: string;
-}
+	description: string;
+	link: string;
+	image: string;
+  }
+  
 
 interface CarouselProps {
     Portfolio: Projects[]; 
@@ -58,7 +58,7 @@ function Carousel({ Portfolio }: CarouselProps) {
 			>
 				{Portfolio.map((Portfolio: Projects, index: number) => (
 					<SwiperSlide key={index}>
-                        <img src={Portfolio.thumbnail} alt={Portfolio.title} />
+                        <img src={Portfolio.image} alt={Portfolio.title} />
                         <h3>{Portfolio.title}</h3>
 					</SwiperSlide>
 				))}
