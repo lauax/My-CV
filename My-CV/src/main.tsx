@@ -1,6 +1,4 @@
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import "@fontsource/bebas-neue/400.css";
-import "@fontsource/montserrat/400.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {
@@ -10,9 +8,9 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import App from "./App";
-import Home from "./Home";
-import PastExperiences from "./PastExperiences";
-import Portfolio from "./Portfolio";
+import Home from "./assets/Pages/Home";
+import PastExperiences from "./assets/Pages/PastExperiences";
+import Portfolio from "./assets/Pages/Portfolio";
 
 
 
