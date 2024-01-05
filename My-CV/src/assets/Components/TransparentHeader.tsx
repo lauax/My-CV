@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function TransparentHeader() {
   return (
-    <Flex px={35} gap={10} color={"grey"} opacity={0.4} maxWidth={100} width={"100%"}>
+    <Flex px={35} py={3} justify="space-between" align="center" color="grey" opacity="0.4" height="15vh">
       <Heading>
         <Link to="/">Home</Link>
         <Link to="/portfolio">Portfolio</Link>

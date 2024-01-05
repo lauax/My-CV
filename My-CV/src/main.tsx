@@ -12,10 +12,20 @@ import Home from "./assets/Pages/Home";
 import PastExperiences from "./assets/Pages/PastExperiences";
 import Portfolio from "./assets/Pages/Portfolio";
 
-
-
-
 const theme = extendTheme({
+  styles: {
+    global: {
+      body: {
+        backgroundColor: "#202020",
+        color: "white",
+        margin: 0,
+      },
+    },
+  },
+  fonts: {
+    heading: `'Bebas Neue', sans-serif`,
+    body: `'Montserrat', sans-serif`,
+  },
 });
 
 const router = createBrowserRouter(
