@@ -18,7 +18,7 @@ import { IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link, useNavigate } from "react-router-dom";
 
-function Header() {
+function TransparentHeader() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [searchTerm, setSearchTerm] = useState("");
@@ -139,4 +139,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default TransparentHeader;
