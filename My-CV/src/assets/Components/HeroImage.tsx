@@ -16,7 +16,7 @@ const HeroImage: React.FC<HeroImageProps> = ({
 }) => {
   return (
     <Flex
-      w="full"
+      w="100"
       h="70vh"
       justifyContent="center"
       alignItems="center"

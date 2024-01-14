@@ -7,90 +7,27 @@ import {
   Flex,
   Heading,
   IconButton,
-  Input,
-  InputGroup,
-  InputRightElement,
-  useDisclosure,
+  useDisclosure
 } from "@chakra-ui/react";
-import { useState } from "react";
-import { FiSearch } from "react-icons/fi";
-import { IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function TransparentHeader() {
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [searchTerm, setSearchTerm] = useState("");
-  const navigate = useNavigate();
-
-  const handleSearchClick = () => {
-    setIsSearchOpen(!isSearchOpen);
-  };
-
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const term = event.target.value;
-    setSearchTerm(term);
-    if (term.trim() === "") {
-      navigate("/");
-    } else {
-      filterMovies(term);
-    }
-  };
-
-  const handleClearInput = () => {
-    setSearchTerm("");
-    navigate("/");
-  };
-
-  const filterMovies = (term: string) => {
-    navigate(`/search-results/${term}`);
-  };
-
+  
   return (
-    <Flex px={35} py={3} justify="space-between" align="center">
+    <Flex px={35} py={3} justify="space-between" align="center" bg="transparent">
       <Heading fontSize={{ base: 68, md: 72 }}>
-        <Link to="/">Flicks</Link>
+        <Link to="/">Lucas-CV</Link>
       </Heading>
       <Flex gap={{ base: 2, md: 10 }}>
-        <Flex position="relative" alignSelf="center">
-          <IconButton
-            icon={<FiSearch />}
-            aria-label="Search"
-            fontSize={30}
-            onClick={handleSearchClick}
-            bg="none"
-            color="white"
-            marginRight={isSearchOpen ? "5px" : 0}
-            _hover={{ bg: "none" }}
-          />
-
-          {isSearchOpen && (
-            <InputGroup>
-              <Input
-                placeholder="Search..."
-                size="sm"
-                marginTop="3px"
-                data-testid="search-input"
-                value={searchTerm}
-                focusBorderColor="white"
-                onChange={handleInputChange}
-              />
-              <InputRightElement>
-                {searchTerm && (
-                  <IoClose cursor="pointer" onClick={handleClearInput} />
-                )}
-              </InputRightElement>
-            </InputGroup>
-          )}
-        </Flex>
         {/** Desktop */}
         <Flex gap={10} display={{ base: "none", md: "flex" }}>
           <Heading order={3}>
-            <Link to="categories">Categories</Link>
+            <Link to="portfolio">Portfolio</Link>
           </Heading>
           <Heading order={3}>
-            <Link to="favorites">Favorites</Link>
+            <Link to="pastExperiences">Past Experiences</Link>
           </Heading>
         </Flex>
         {/** Mobile */}

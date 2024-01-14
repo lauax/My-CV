@@ -1,6 +1,7 @@
 import { Flex } from "@chakra-ui/react";
 import React from 'react';
-import HeroLayout from "../Components/HeroImage"; // Import the appropriate component
+import data from "../../../data/Portfolio.json";
+import HeroLayout from "../Components/HeroImage";
 
 interface ProjectProps {
   title: string;
@@ -9,17 +10,18 @@ interface ProjectProps {
   image: string;
 }
 
-interface HeroImageProps {
-  projects: ProjectProps[];
-}
 
-const HeroImage: React.FC<HeroImageProps> = ({ projects }) => {
+
+const Projects: React.FC = () => {
+  const projects: ProjectProps[] = data;
   return (
     <Flex
       w="100%"
       justifyContent="center"
       alignItems="center"
       data-testid="carousel-container"
+      flexDirection="column"
+     
     >
       {projects.map((project: ProjectProps, index: number) => (
         <HeroLayout
@@ -34,4 +36,4 @@ const HeroImage: React.FC<HeroImageProps> = ({ projects }) => {
   ); 
 }
 
-export default HeroImage;
+export default Projects;

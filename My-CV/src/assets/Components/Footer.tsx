@@ -1,10 +1,10 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 
 
     function Footer() {
       return (
         <Flex>
-          <Heading>Header</Heading>
+          
         </Flex>
       );
     }
