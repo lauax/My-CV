@@ -1,10 +1,15 @@
 import { Flex } from "@chakra-ui/react";
+import Pastexperience from "../Components/PastExperienceMap";
+import TransparentHeader from "../Components/TransparentHeader";
 
 function PastExperiences() {
   return (
-    <Flex px={35} flexDirection="column" gap={10}>
-
+    <>
+    <TransparentHeader/>
+    <Flex px={35} flexDirection="column" marginTop="3rem" gap={10}>
+    <Pastexperience/>
     </Flex>
+    </>
   );
 }
 

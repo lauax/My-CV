@@ -14,7 +14,8 @@ import { Link } from "react-router-dom";
 
 function TransparentHeader() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  
+
+
   return (
     <Flex px={35} py={3} justify="space-between" align="center" bg="transparent">
       <Heading fontSize={{ base: 68, md: 72 }}>
@@ -24,10 +25,10 @@ function TransparentHeader() {
         {/** Desktop */}
         <Flex gap={10} display={{ base: "none", md: "flex" }}>
           <Heading order={3}>
-            <Link to="portfolio">Portfolio</Link>
+            <Link to="/portfolio">Portfolio</Link>
           </Heading>
           <Heading order={3}>
-            <Link to="pastExperiences">Past Experiences</Link>
+            <Link to="/past-experiences">Past Experiences</Link>
           </Heading>
         </Flex>
         {/** Mobile */}
@@ -58,13 +59,13 @@ function TransparentHeader() {
                 alignItems="center"
               >
                 <Heading order={3}>
-                  <Link to="categories" onClick={onClose}>
-                    Categories
+                  <Link to="/portfolio" onClick={onClose}>
+                  Portfolio
                   </Link>
                 </Heading>
                 <Heading order={3}>
-                  <Link to="favorites" onClick={onClose}>
-                    Favorites
+                  <Link to="/past-experiences" onClick={onClose}>
+                  Past Experiences
                   </Link>
                 </Heading>
               </Flex>
