@@ -54,11 +54,12 @@ const HeroImage: React.FC<HeroImageProps> = ({
       </Box>
       {!isBackground && (
         <Box justifyContent="center" display="flex" paddingBottom="4rem">
-          <img
+          <img 
             src={imageUrl}
             alt={title}
             width={width}
             height={height}
+            style={{ backgroundColor: "white" }}
           />
         </Box>
       )}
