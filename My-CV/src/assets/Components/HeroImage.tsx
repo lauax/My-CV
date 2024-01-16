@@ -10,6 +10,7 @@ interface HeroImageProps {
   width?: string;
   height?: string;
   isBackground?: boolean;
+  id?:string
 }
 
 const HeroImage: React.FC<HeroImageProps> = ({

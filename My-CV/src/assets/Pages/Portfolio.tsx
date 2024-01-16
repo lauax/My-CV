@@ -6,7 +6,7 @@ function Portfolio() {
   return (
     <>
         <TransparentHeader />
-        <Flex px={35} flexDirection="column" gap={10}>
+        <Flex flexDirection="column">
           <Projects />
         </Flex>
     </>
