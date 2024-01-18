@@ -1,21 +1,21 @@
 [
   {
-    "title": "Quiz",
-    "description": "Quiz spel välj mellan 3,5,7,10 frågor svarar du rätt på på mer än 50% får du glad smile annars en ledsen frågor är utmanad och kul för vänner och familj",
-    "link": "https://quizzi-game.netlify.app/",
-    "image": "../Images/Quiz.jpg"
-  },
-  {
     "title": "Star-bomb",
     "description": "Star-bomb är ett spel där du spelar 1 mot 1 och ska göra mål med bomberna eller få över bomberna på motståndarens sida innan dem sprängs de är roliga sound effects och bra musik",
     "link": "https://star-bomb.netlify.app/",
     "image": "../Images/Starbomb.jpg"
   },
   {
-    "title": "Apple",
-    "description": "En kopia på Apples hemsida",
-    "link": "https://lauax.github.io/Apples-hemsida/",
-    "image": "../Images/Apple.jpg"
+    "title": "Kalender",
+    "description": "Kalender som läser in via API och testar med hjälp av cypher",
+    "link": "https://github.com/plugga-tech/kalenderverktyg-med-javascript-mergim-lucas-parham",
+    "image": "../Images/Kalender.jpg"
+  },
+  {
+    "title": "PortfolioWebsida",
+    "description": "PortfolioWebsida för Eld's IT",
+    "link": "https://github.com/linusHernvall/portfolj-webbplats",
+    "image": "../Images/PortfolioWebsida.jpg"
   },
   {
     "title": "Chat-app",
@@ -24,15 +24,15 @@
     "image": "../Images/Catchat.jpg"
   },
   {
-    "title": "Step-up",
-    "description": "Hemsida med databas för användare, produkter, ordrar samt en trevlig design",
-    "link": "https://github.com/lauax/slutprojekt8-main",
-    "image": "../Images/STEPUP.jpg"
+    "title": "Spel",
+    "description": "Spel med massa klasser",
+    "link": "https://github.com/lauax/Laboration-1",
+    "image": "../Images/Spel.jpg"
   },
   {
-    "title": "Shareigator",
-    "description": "Följ readme filen i projektet. Det är en social platform med aligator tema ",
-    "link": "https://github.com/plugga-tech/react-express-user-content-ts-ehg",
-    "image": "../Images/Shareigator.jpg"
+    "title": "Flicks",
+    "description": "Streamingplattform för filmer med en trevlig design",
+    "link": "https://github.com/jennifertechel/flicks-group-6",
+    "image": "../Images/Flicks.jpg"
   }
 ]
