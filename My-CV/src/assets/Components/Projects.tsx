@@ -1,7 +1,7 @@
 import { Flex } from "@chakra-ui/react";
 import React, { useEffect, useState } from 'react';
 import data from "../../../data/Portfolio.json";
-import HeroLayout from "../Components/HeroImage";
+import HeroImage from "../Components/HeroImage";
 
 interface ProjectProps {
   title: string;
@@ -17,34 +17,34 @@ const Projects: React.FC = () => {
   useEffect(() => {
     const handleScroll = (event: WheelEvent) => {
       if (!isScrolling) {
-        // Set the flag to prevent further scrolling until animation is complete
+       
         setIsScrolling(true);
 
-        // Get the image height
+        
         const imageHeight = window.innerHeight;
 
-        // Calculate the next scroll position
+        
         const scrollDirection = event.deltaY > 0 ? 'down' : 'up';
         const scrollAmount = scrollDirection === 'down' ? imageHeight : -imageHeight;
         const nextScrollPosition = Math.round(window.scrollY / imageHeight) * imageHeight + scrollAmount;
 
-        // Jump to the next section (image height) on each scroll
+        
         window.scrollTo({
           top: nextScrollPosition,
           behavior: 'smooth',
         });
 
-        // Wait for the scroll animation to complete and then reset the flag
+        
         setTimeout(() => {
           setIsScrolling(false);
-        }, 500); // Adjust the timeout as needed
+        }, 500); 
       }
     };
 
-    // Attach the scroll event listener
+    
     window.addEventListener('wheel', handleScroll);
 
-    // Clean up the event listener on component unmount
+    
     return () => {
       window.removeEventListener('wheel', handleScroll);
     };
@@ -59,7 +59,7 @@ const Projects: React.FC = () => {
       flexDirection="column"
     >
       {projects.map((project: ProjectProps, index: number) => (
-        <HeroLayout
+        <HeroImage
           key={index}
           imageUrl={project.image}
           title={project.title}

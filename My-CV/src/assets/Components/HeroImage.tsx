@@ -2,9 +2,9 @@ import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import React from 'react';
 
 interface HeroImageProps {
-  imageUrl: string;
-  title: string;
-  description: string;
+  imageUrl?: string;
+  title?: string;
+  description?: string;
   link?: string;  
   date?: string;  
   width?: string;
