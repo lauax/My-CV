@@ -21,7 +21,7 @@ const HeroImage: React.FC<HeroImageProps> = ({
   date, 
   width,
   height,
-  isBackground = true,
+  isBackground= true,
 }) => {
   return (
     <Flex
@@ -35,7 +35,7 @@ const HeroImage: React.FC<HeroImageProps> = ({
       color="white"
       display="column" 
     >
-      <Box pl={{ base: "4", md: "10" }} textAlign="center">
+      <Box pl={{ base: "4", md: "10" }} textAlign="center" >
         <Heading fontSize={{ base: "30", md: "52" }} mb={4}>
           {title}
         </Heading>
@@ -47,7 +47,7 @@ const HeroImage: React.FC<HeroImageProps> = ({
             {date}
           </Text>
         )}
-        {link && !isBackground && (
+        {link && isBackground && (
           <Link href={link}>
             View more
           </Link>

@@ -6,7 +6,7 @@ function PastExperiences() {
   return (
     <>
     <TransparentHeader/>
-    <Flex px={35} flexDirection="column" paddingTop="10rem "gap={10}>
+    <Flex px={35} flexDirection="column" paddingTop="5rem" gap={10}>
     <Pastexperience/>
     </Flex>
     </>

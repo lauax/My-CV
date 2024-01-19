@@ -6,12 +6,6 @@
     "image": "../Images/Starbomb.jpg"
   },
   {
-    "title": "Kalender",
-    "description": "Kalender som läser in via API och testar med hjälp av cypher",
-    "link": "https://github.com/plugga-tech/kalenderverktyg-med-javascript-mergim-lucas-parham",
-    "image": "../Images/Kalender.jpg"
-  },
-  {
     "title": "PortfolioWebsida",
     "description": "PortfolioWebsida för Eld's IT",
     "link": "https://github.com/linusHernvall/portfolj-webbplats",
@@ -34,5 +28,11 @@
     "description": "Streamingplattform för filmer med en trevlig design",
     "link": "https://github.com/jennifertechel/flicks-group-6",
     "image": "../Images/Flicks.jpg"
+  },
+  {
+    "title": "Scooter Shop",
+    "description": "Scooter Shop med localstorage fungerade kassasystem",
+    "link": "https://github.com/plugga-tech/react-webshop-ts-carl-edvin-jesper-lucas",
+    "image": "../Images/ScooterShop.jpg"
   }
 ]
