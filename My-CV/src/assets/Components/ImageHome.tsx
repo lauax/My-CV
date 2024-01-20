@@ -12,12 +12,6 @@ return (
       
     >
       <HeroImage 
-        width="30"
-        imageUrl="../Images/BildPåMig.jpg"
-        height="80vh"
-        
-        />
-      <HeroImage 
         width="70"
         imageUrl="../Images/background.jpg"
         height="80vh"
