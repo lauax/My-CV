@@ -11,7 +11,8 @@ interface HeroImageProps {
   height?: string;
   isBackground?: boolean;
   id?: string;
-  justifyContent?: string; // Add justifyContent prop
+  justifyContent?: string;
+  bgSize?: string; // New prop for background size
 }
 
 const HeroImage: React.FC<HeroImageProps> = ({
@@ -23,20 +24,23 @@ const HeroImage: React.FC<HeroImageProps> = ({
   width,
   height,
   isBackground = true,
-  justifyContent = "top"
+  justifyContent = "top",
+  bgSize = "100%" 
 }) => {
+  
   return (
     <Flex
-      w="100%"
+      width="100%"
       h={height || "100vh"}
       justifyContent={justifyContent}
       alignItems="center"
       paddingTop="2rem"
       bgImage={isBackground ? `url(${imageUrl})` : "none"}
-      bgSize="cover"
+      bgSize={bgSize}
       bgPos="center"
       color="white"
       flexDirection="column"
+      backgroundRepeat="no-repeat"
     >
       <Box pl={{ base: "4", md: "10" }} textAlign="center">
         <Heading fontSize={{ base: "30", md: "52" }} mb={4}>

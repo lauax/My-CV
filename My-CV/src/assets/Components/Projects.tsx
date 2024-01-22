@@ -57,7 +57,6 @@ const Projects: React.FC = () => {
       alignItems="center"
       data-testid="carousel-container"
       flexDirection="column"
-      
     >
       {projects.map((project: ProjectProps, index: number) => (
         <HeroImage
@@ -66,6 +65,9 @@ const Projects: React.FC = () => {
           title={project.title}
           description={project.description}
           link={project.link}
+          height="100vh"
+          bgSize="100%"
+          
         />
       ))}
     </Flex>

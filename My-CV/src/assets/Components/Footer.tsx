@@ -1,12 +1,44 @@
-import { Flex } from "@chakra-ui/react";
+import { Box, Flex, IconButton, Link, Tooltip } from "@chakra-ui/react";
+import { FaEnvelope, FaGithub } from "react-icons/fa";
 
+function Footer() {
+  return (
+    <Flex
+      align="center"
+      justify="space-between"
+      p="4"
+      bg="transparent"
+      backgroundColor="none"
+    >
+      <Box>
+        © 2024 Your Company. All rights reserved.
+      </Box>
 
-    function Footer() {
-      return (
-        <Flex>
-          
-        </Flex>
-      );
-    }
+      <Box>
+        <Tooltip label="GitHub" hasArrow>
+          <Link href="#" isExternal>
+            <IconButton
+              aria-label="GitHub"
+              icon={<FaGithub />}
+              size="md"
+              colorScheme="black"
+            />
+          </Link>
+        </Tooltip>
+
+        <Tooltip label="Mail" hasArrow>
+          <Link href="mailto:your.email@example.com" isExternal mx="2">
+            <IconButton
+              aria-label="Mail"
+              icon={<FaEnvelope />}
+              size="md"
+              colorScheme="black"
+            />
+          </Link>
+        </Tooltip>
+      </Box>
+    </Flex>
+  );
+}
 
 export default Footer;
