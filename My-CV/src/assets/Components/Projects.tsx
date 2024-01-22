@@ -57,6 +57,7 @@ const Projects: React.FC = () => {
       alignItems="center"
       data-testid="carousel-container"
       flexDirection="column"
+      
     >
       {projects.map((project: ProjectProps, index: number) => (
         <HeroImage

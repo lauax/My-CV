@@ -5,37 +5,40 @@ interface HeroImageProps {
   imageUrl?: string;
   title?: string;
   description?: string;
-  link?: string;  
-  date?: string;  
+  link?: string;
+  date?: string;
   width?: string;
   height?: string;
   isBackground?: boolean;
-  id?:string
+  id?: string;
+  justifyContent?: string; // Add justifyContent prop
 }
 
 const HeroImage: React.FC<HeroImageProps> = ({
   imageUrl,
   title,
   description,
-  link, 
-  date, 
+  link,
+  date,
   width,
   height,
-  isBackground= true,
+  isBackground = true,
+  justifyContent = "top"
 }) => {
   return (
     <Flex
       w="100%"
       h={height || "100vh"}
-      justifyContent="center"
+      justifyContent={justifyContent}
       alignItems="center"
+      paddingTop="2rem"
       bgImage={isBackground ? `url(${imageUrl})` : "none"}
       bgSize="cover"
       bgPos="center"
       color="white"
-      display="column" 
+      flexDirection="column"
     >
-      <Box pl={{ base: "4", md: "10" }} textAlign="center" >
+      <Box pl={{ base: "4", md: "10" }} textAlign="center">
         <Heading fontSize={{ base: "30", md: "52" }} mb={4}>
           {title}
         </Heading>
@@ -48,14 +51,12 @@ const HeroImage: React.FC<HeroImageProps> = ({
           </Text>
         )}
         {link && isBackground && (
-          <Link href={link}>
-            View more
-          </Link>
+          <Link href={link}>View more</Link>
         )}
       </Box>
       {!isBackground && (
         <Box justifyContent="center" display="flex" paddingBottom="4rem">
-          <img 
+          <img
             src={imageUrl}
             alt={title}
             width={width}
@@ -66,6 +67,6 @@ const HeroImage: React.FC<HeroImageProps> = ({
       )}
     </Flex>
   );
-}
+};
 
 export default HeroImage;

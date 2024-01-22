@@ -6,15 +6,12 @@ function ImageHome() {
 return (
     <Flex
       w="100%"
-      justifyContent="center"
-      alignItems="center"
-      data-testid="carousel-container"
-      
     >
       <HeroImage 
-        width="70"
         imageUrl="../Images/background.jpg"
         height="80vh"
+        title="Lucas-CV"
+        justifyContent="center"
         />
      
     </Flex>
