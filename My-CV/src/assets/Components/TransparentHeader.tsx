@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import ImageLogo from "../../../Images/logo.png";
 
 function TransparentHeader() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -19,7 +20,13 @@ function TransparentHeader() {
   return (
     <Flex px={35} py={3} justify="space-between" align="center" bg="transparent" position="fixed" top="0" left="0" right="0">
       <Heading fontSize={{ base: 68, md: 72 }}>
-        <Link to="/">Lucas-CV</Link>
+      <Link to="/">
+      <img
+            src={ImageLogo}
+            height="auto"
+            width="60rem"
+          />
+      </Link>
       </Heading>
       <Flex gap={{ base: 2, md: 10 }}>
         {/** Desktop */}
