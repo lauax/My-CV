@@ -1,5 +1,5 @@
 import { Flex } from "@chakra-ui/react";
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import data from "../../../data/Pastexperience.json";
 import HeroLayout from "../Components/HeroImage";
 
@@ -13,7 +13,44 @@ interface PastexperienceProps {
 
 const Pastexperience: React.FC = () => {
   const pastExperiences: PastexperienceProps[] = data;
-  
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = (event: WheelEvent) => {
+      if (!isScrolling) {
+       
+        setIsScrolling(true);
+
+        
+        const imageHeight = window.innerHeight;
+
+        
+        const scrollDirection = event.deltaY > 0 ? 'down' : 'up';
+        const scrollAmount = scrollDirection === 'down' ? imageHeight : -imageHeight;
+        const nextScrollPosition = Math.round(window.scrollY / imageHeight) * imageHeight + scrollAmount;
+
+        
+        window.scrollTo({
+          top: nextScrollPosition,
+          behavior: 'smooth',
+        });
+
+        
+        setTimeout(() => {
+          setIsScrolling(false);
+        }, 500); 
+      }
+    };
+
+    
+    window.addEventListener('wheel', handleScroll);
+
+    
+    return () => {
+      window.removeEventListener('wheel', handleScroll);
+    };
+  }, [isScrolling]);
+
   return (
     <Flex
       w="100" 
@@ -30,8 +67,9 @@ const Pastexperience: React.FC = () => {
           description={experience.description}
           date={experience.date}
           width="100"
-          height="auto"
+          height="100vh"
           isBackground={false}
+          justifyContent="center"
         />
       ))}
     </Flex>
