@@ -12,8 +12,7 @@ return (
         height="80vh"
         title="Lucas-CV"
         justifyContent="center"
-        bgSize="100%"
-        
+        bgSize="none"
         />
      
     </Flex>
