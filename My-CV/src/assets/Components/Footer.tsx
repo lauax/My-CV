@@ -16,7 +16,7 @@ function Footer() {
 
       <Box>
         <Tooltip label="GitHub" hasArrow>
-          <Link href="#" isExternal>
+          <Link href="https://github.com/lauax" isExternal>
             <IconButton
               aria-label="GitHub"
               icon={<FaGithub />}
@@ -27,7 +27,7 @@ function Footer() {
         </Tooltip>
 
         <Tooltip label="Mail" hasArrow>
-          <Link href="mailto:your.email@example.com" isExternal mx="2">
+          <Link href="mailto:Lucas12alfredsson@gmail.com" isExternal mx="2">
             <IconButton
               aria-label="Mail"
               icon={<FaEnvelope />}
