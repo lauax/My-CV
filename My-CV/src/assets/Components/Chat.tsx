@@ -102,6 +102,7 @@ const Chat = () => {
             isDisabled={isSending}
             backgroundColor="white"
             color="black"
+            marginBottom="0.5rem"
           />
         </>
       )}
