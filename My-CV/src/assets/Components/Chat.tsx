@@ -56,13 +56,15 @@ const Chat = () => {
       color="white"
     >
       <IconButton
-        icon={isOpen ? <CloseIcon /> : <ChatIcon />}
-        aria-label={isOpen ? 'Close Chat' : 'Open Chat'}
-        colorScheme="white"
-        onClick={toggleChat}
-        size="sm"
-        
-      />
+            aria-label={isOpen ? 'Close Chat' : 'Open Chat'}
+            colorScheme="blue"
+            onClick={toggleChat}
+            size="sm"
+            backgroundColor="white"
+            color="black"
+            >
+            {isOpen ? <CloseIcon /> : <ChatIcon />}
+        </IconButton>
 
       {isOpen && (
         <>
@@ -94,10 +96,12 @@ const Chat = () => {
           <IconButton
             icon={<EmailIcon />}
             aria-label="Send"
-            colorScheme="white"
+            colorScheme="blue"
             onClick={validateAndSendMessage}
             size="sm"
             isDisabled={isSending}
+            backgroundColor="white"
+            color="black"
           />
         </>
       )}
