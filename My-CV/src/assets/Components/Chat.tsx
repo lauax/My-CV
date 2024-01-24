@@ -4,7 +4,6 @@ import emailjs from 'emailjs-com';
 import { useState } from 'react';
 
 const Chat = () => {
-  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [isOpen, setIsOpen] = useState(false);
@@ -12,14 +11,13 @@ const Chat = () => {
 
   const toggleChat = () => {
     setIsOpen(!isOpen);
-    setName('');
     setEmail('');
     setMessage('');
   };
 
   const validateAndSendMessage = async () => {
-    if (!name.trim() || !email.trim() || !message.trim()) {
-      alert('Name, Email, and Message are required');
+    if (!email.trim() || !message.trim()) {
+      alert('Email and Message are required');
       return;
     }
 
@@ -29,7 +27,6 @@ const Chat = () => {
         'service_geahi3p',
         'template_qm5990v',
         {
-          name,
           email,
           message,
         },
@@ -37,7 +34,6 @@ const Chat = () => {
       );
 
       console.log('Email sent successfully');
-      setName('');
       setEmail('');
       setMessage('');
     } catch (error) {
@@ -69,19 +65,13 @@ const Chat = () => {
       {isOpen && (
         <>
           <Input
-            placeholder="Your Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            mb={2}
-            backgroundColor="white" 
-          />
-          <Input
             placeholder="Your Email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             mb={2}
             backgroundColor="white" 
+            color="black"
           />
           <Textarea
             placeholder="Type your message..."
@@ -92,6 +82,7 @@ const Chat = () => {
             height="150px"
             mb={2}
             backgroundColor="white" 
+            color="black"
           />
           <IconButton
             icon={<EmailIcon />}
