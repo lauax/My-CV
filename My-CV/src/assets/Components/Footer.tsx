@@ -1,5 +1,5 @@
 import { Box, Flex, IconButton, Link, Tooltip } from "@chakra-ui/react";
-import { FaEnvelope, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import Chat from "./Chat";
 
 function Footer() {
@@ -14,11 +14,6 @@ function Footer() {
           </Link>
         </Tooltip>
 
-        <Tooltip label="Mail" hasArrow>
-          <Link href="mailto:Lucas12alfredsson@gmail.com" isExternal mx="2">
-            <IconButton aria-label="Mail" icon={<FaEnvelope />} size="md" colorScheme="black" />
-          </Link>
-        </Tooltip>
       </Box>
 
       <Chat />

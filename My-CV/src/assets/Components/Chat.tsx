@@ -53,13 +53,15 @@ const Chat = () => {
       position="fixed"
       left="9"
       bottom="20"
+      color="white"
     >
       <IconButton
         icon={isOpen ? <CloseIcon /> : <ChatIcon />}
         aria-label={isOpen ? 'Close Chat' : 'Open Chat'}
-        colorScheme="teal"
+        colorScheme="white"
         onClick={toggleChat}
         size="sm"
+        
       />
 
       {isOpen && (
@@ -69,6 +71,7 @@ const Chat = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             mb={2}
+            backgroundColor="white" 
           />
           <Input
             placeholder="Your Email"
@@ -76,6 +79,7 @@ const Chat = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             mb={2}
+            backgroundColor="white" 
           />
           <Textarea
             placeholder="Type your message..."
@@ -85,11 +89,12 @@ const Chat = () => {
             width="250px"
             height="150px"
             mb={2}
+            backgroundColor="white" 
           />
           <IconButton
             icon={<EmailIcon />}
             aria-label="Send"
-            colorScheme="teal"
+            colorScheme="white"
             onClick={validateAndSendMessage}
             size="sm"
             isDisabled={isSending}
