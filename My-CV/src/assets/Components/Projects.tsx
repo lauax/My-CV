@@ -1,18 +1,17 @@
 import { Flex } from "@chakra-ui/react";
 import React, { useEffect, useState } from 'react';
-import data from "../../../data/Pastexperience.json";
-import HeroLayout from "../Components/HeroImage";
+import data from "../../../data/Portfolio.json";
+import HeroImage from "./HeroImage";
 
-interface PastexperienceProps {
+interface ProjectProps {
   title: string;
   description: string;
-  date: string;
+  link: string;
   image: string;
-  isBackground?:boolean;
 }
 
-const Pastexperience: React.FC = () => {
-  const pastExperiences: PastexperienceProps[] = data;
+const Projects: React.FC = () => {
+  const projects: ProjectProps[] = data;
   const [isScrolling, setIsScrolling] = useState(false);
 
   useEffect(() => {
@@ -53,27 +52,26 @@ const Pastexperience: React.FC = () => {
 
   return (
     <Flex
-      w="100" 
+      w="100%"
       justifyContent="center"
       alignItems="center"
       data-testid="carousel-container"
       flexDirection="column"
     >
-      {pastExperiences.map((experience: PastexperienceProps, index: number) => (
-        <HeroLayout
+      {projects.map((project: ProjectProps, index: number) => (
+        <HeroImage
           key={index}
-          imageUrl={experience.image}
-          title={experience.title}
-          description={experience.description}
-          date={experience.date}
-          width="100"
+          imageUrl={project.image}
+          title={project.title}
+          description={project.description}
+          link={project.link}
           height="100vh"
-          isBackground={false}
-          justifyContent="center"
+          bgSize="100%"
+          
         />
       ))}
     </Flex>
-  ); 
+  );
 }
 
-export default Pastexperience;
+export default Projects;
