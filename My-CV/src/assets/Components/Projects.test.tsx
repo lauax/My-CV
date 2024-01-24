@@ -1,6 +1,6 @@
-// Import necessary libraries for testing
+
 import '@testing-library/jest-dom';
-import { fireEvent, render, screen } from '@testing-library/react';
+import { describe, fireEvent, render, screen } from '@testing-library/react';
 import Projects from './Projects';
 
 // Mock data for testing
