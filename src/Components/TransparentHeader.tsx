@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
-import ImageLogo from "../Images/logo.jpg";
+import ImageLogo from "../../public/Images/logo.jpg";
 
 function TransparentHeader() {
   const { isOpen, onOpen, onClose } = useDisclosure();

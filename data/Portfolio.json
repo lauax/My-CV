@@ -3,36 +3,36 @@
     "title": "Star-bomb",
     "description": "Star-bomb är ett spel där du spelar 1 mot 1 och ska göra mål med bomberna eller få över bomberna på motståndarens sida innan dem sprängs de är roliga sound effects och bra musik",
     "link": "https://star-bomb.netlify.app/",
-    "image": "../src/Images/Starbomb.jpg"
+    "image": "/Images/Starbomb.jpg"
   },
   {
     "title": "PortfolioWebsida",
     "description": "PortfolioWebsida för Eld's IT",
     "link": "https://github.com/linusHernvall/portfolj-webbplats",
-    "image": "../src/Images/PortfolioWebsida.jpg"
+    "image": "/Images/PortfolioWebsida.jpg"
   },
   {
     "title": "Chat-app",
     "description": "Chatta hemsida kopiera projekt för att se",
     "link": "https://github.com/lauax/socket-client-server.git",
-    "image": "../src/Images/Catchat.jpg"
+    "image": "/Images/Catchat.jpg"
   },
   {
     "title": "Spel",
     "description": "Spel med massa klasser",
     "link": "https://github.com/lauax/Laboration-1",
-    "image": "../src/Images/Spel.jpg"
+    "image": "/Images/Spel.jpg"
   },
   {
     "title": "Flicks",
     "description": "Streamingplattform för filmer med en trevlig design",
     "link": "https://github.com/jennifertechel/flicks-group-6",
-    "image": "../src/Images/Flicks.jpg"
+    "image": "/Images/Flicks.jpg"
   },
   {
     "title": "Scooter Shop",
     "description": "Scooter Shop med localstorage fungerade kassasystem",
     "link": "https://github.com/plugga-tech/react-webshop-ts-carl-edvin-jesper-lucas",
-    "image": "../src/Images/ScooterShop.jpg"
+    "image": "/Images/ScooterShop.jpg"
   }
 ]
