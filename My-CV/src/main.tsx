@@ -8,9 +8,9 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import App from "./App";
-import Home from "./assets/Pages/Home";
-import PastExperiences from "./assets/Pages/PastExperiences";
-import Portfolio from "./assets/Pages/Portfolio";
+import Home from "./Pages/Home";
+import PastExperiences from "./Pages/PastExperiences";
+import Portfolio from "./Pages/Portfolio";
 
 const theme = extendTheme({
   styles: {

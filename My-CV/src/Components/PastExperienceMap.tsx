@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import React, { useEffect, useState } from 'react';
-import data from "../../../data/Pastexperience.json";
+import data from "../../data/Pastexperience.json";
 import HeroLayout from "./HeroImage";
 
 interface PastexperienceProps {

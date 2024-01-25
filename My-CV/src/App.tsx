@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Chat from "./assets/Components/Chat";
-import Footer from './assets/Components/Footer';
+import Chat from "./Components/Chat";
+import Footer from './Components/Footer';
 
 function App() {
   return (

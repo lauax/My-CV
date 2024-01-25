@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import React, { useEffect, useState } from 'react';
-import data from "../../../data/Portfolio.json";
+import data from "../../data/Portfolio.json";
 import HeroImage from "./HeroImage";
 
 interface ProjectProps {
