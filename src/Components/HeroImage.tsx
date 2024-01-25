@@ -12,7 +12,7 @@ interface HeroImageProps {
   isBackground?: boolean;
   id?: string;
   justifyContent?: string;
-  bgSize?: string; // New prop for background size
+  bgSize?: string; 
 }
 
 const HeroImage: React.FC<HeroImageProps> = ({
