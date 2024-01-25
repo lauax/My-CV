@@ -8,7 +8,7 @@ return (
       w="100%"
     >
       <HeroImage 
-        imageUrl="../Images/background.jpg"
+        imageUrl="../src/Images/background.jpg"
         height="80vh"
         title="Lucas-CV"
         justifyContent="center"

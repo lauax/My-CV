@@ -3,6 +3,7 @@ import { Flex, IconButton, Input, Textarea } from '@chakra-ui/react';
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
 
+
 const Chat = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');

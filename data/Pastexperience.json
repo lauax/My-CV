@@ -3,25 +3,25 @@
         "title": "Hedås fastighetsservice",
         "date": "2021 Maj - 2021 Augusti",
         "description": "Jag jobbade inom fastighetsservice där jag tog hand om trädgårdsarbeten såsom klippning av buskar och gräsmattor. Vi tömde även mycket återvinningskärl och rensade ut skräp från lokaler. Jag är noggrann och hjälpsam och inte rädd för att hugga i.",
-        "image": "../Images/hedås-icon.jpg"
+        "image": "../src/Images/hedås-icon.jpg"
     },
     {
         "title": "Teleperformance Kundservice",
         "date": "2021 September - 2022 Maj",
         "description": "Jag jobbade inom service och tog samtal via telefon samt hjälpte kunder med allt från reklamation, leveransfrågor och svarade på allmänna frågor om kunden hade några. Jobbet har lärt mig hur man är serviceminded och uttrycker sig i skrift och tal. Det kräver även en stor portion tålamod.",
-        "image": "../Images/teleperformance-icon.jpg"
+        "image": "../src/Images/teleperformance-icon.jpg"
     },
     {
         "title": "Fruktbud",
         "date": "Pågående - Sommarjobb",
         "description": "Jag jobbar deltid med att köra ut frukt. Jag sommarjobbade även där nu nästa termin har jag bestämt mig för att lägga fullt fokus på skola istället.",
-        "image": "../Images/kvalitetslogga.jpg"
+        "image": "../src/Images/kvalitetslogga.jpg"
     },
     {
         "title": "Medieinstitutet",
         "date": "Pågående - 2024 Maj",
         "description": "Utbildas till Frontend developer",
-        "image": "../Images/medieinstitutet.jpg"
+        "image": "../src/Images/medieinstitutet.jpg"
     }
     
 ]
