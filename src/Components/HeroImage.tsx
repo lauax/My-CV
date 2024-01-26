@@ -25,7 +25,7 @@ const HeroImage: React.FC<HeroImageProps> = ({
   height,
   isBackground = true,
   justifyContent = "top",
-  bgSize = "100%" 
+  bgSize = "95%" 
 }) => {
   
   return (
