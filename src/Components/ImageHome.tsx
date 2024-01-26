@@ -9,7 +9,7 @@ return (
     >
       <HeroImage 
         imageUrl="/Images/background.jpg"
-        height="70vh"
+        height="71vh"
         title="Lucas-CV"
         justifyContent="center"
         bgSize="none"
