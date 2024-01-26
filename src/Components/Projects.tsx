@@ -67,7 +67,7 @@ const Projects: React.FC = () => {
           link={project.link}
           height="100vh"
           bgSize="100%"
-          
+          width="100"
         />
       ))}
     </Flex>
