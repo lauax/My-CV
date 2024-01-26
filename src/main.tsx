@@ -16,7 +16,7 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        backgroundColor: "#202020",
+        backgroundColor: "black",
         color: "white",
         margin: 0,
       },
